@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetGroom - Clínica Veterinaria</title>
+    <!-- Vinculación del archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Clínica Veterinaria Hugo´s</h1>
+        <p>Cuidamos a tu mejor amigo con amor y profesionalismo.</p>
+    </header>
+    
+    <!-- Barra de navegación limpia sin estilos inline -->
+    <nav class="barra-navegacion">
+        <a href="index.html" class="enlace-nav activo">Inicio</a>
+        <a href="nosotros.html" class="enlace-nav">Nosotros</a>
+    </nav>
+
+    <main>
+        <h2>Bienvenidos a nuestro portal</h2>
+        <p>Aquí encontrarás toda la información sobre nuestros servicios médicos y de estética.</p>
+            
+        <section>
+            <h2>Nuestros Servicios</h2>
+            <ul>
+                <li><strong>Consulta Médica General:</strong> Chequeos preventivos y vacunas.</li>
+                <li><strong>Estética Canina y Felina:</strong> Baños, cortes de pelo y limpieza.</li>
+                <li><strong>Urgencias 24/7:</strong> Atención médica inmediata en cualquier momento.</li>
+                <li><strong>Cirugía y Laboratorio:</strong> Equipamiento avanzado para diagnósticos certeros.</li>
+            </ul>
+        </section>
+
+        <section class="seccion-cita">
+            <h2>Agendar una Cita</h2>
+            <form id="formCita" class="formulario-cita">
+                <div class="grupo-formulario">
+                    <label for="mascota">Nombre de la Mascota:</label>
+                    <input type="text" id="mascota" required placeholder="Ej. Tom">
+                </div>
+                <div class="grupo-formulario">
+                    <label for="tipo">Tipo de Mascota:</label>
+                    <select id="tipo">
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <!-- Nuevo campo integrado en tu formulario -->
+                <div class="grupo-formulario">
+                    <label for="fechaHora">Fecha y Hora de la Cita:</label>
+                    <input type="datetime-local" id="fechaHora" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="motivo">Motivo de la Cita:</label>
+                    <textarea id="motivo" rows="3" placeholder="Ej. Control general..."></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar Solicitud</button>
+            </form>
+        </section>
+
+        <!-- Sección de testimonios limpia sin estilos inline -->
+        <section class="seccion-testimonios">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="tarjeta-testimonio">
+                <p><em>"Excelente atención para mi gatito Tom, el Dr. Hugo fue muy paciente."</em></p>
+                <span class="autor-testimonio">- María R.</span>
+            </div>
+        </section>
+
+        <!-- Sección del historial dinámico -->
+        <section class="seccion-historial">
+            <h2>Próximas Citas Programadas</h2>
+            <div id="listaCitas" class="contenedor-citas">
+                <!-- Se rellena automáticamente con JS -->
+            </div>
+        </section>
+        <section class="seccion-ubicacion">
+            <h2>Dónde Encontrarnos</h2>
+            <p>📍 <strong>Dirección:</strong> Av. Principal de las Mascotas #123, Ciudad Veterinaria</p>
+            <p>⏰ <strong>Horario:</strong> Lunes a Sábado: 8:00 AM - 8:00 PM (Urgencias 24/7)</p>
+            
+            <!-- Contenedor visual del mapa -->
+            <div class="mapa-ficticio">
+                <div class="marcador-mapa">📍</div>
+                <div class="info-ventana-mapa">¡Clínica Hugo's está aquí!</div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Vinculación del archivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetGroom - Clínica Veterinaria</title>
+    <!-- Vinculación del archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Clínica Veterinaria Hugo´s</h1>
+        <p>Cuidamos a tu mejor amigo con amor y profesionalismo.</p>
+    </header>
+    <main>
+        <h2>Bienvenidos a nuestro portal</h2>
+        <p>Aquí encontrarás toda la información sobre nuestros servicios médicos y de estética.</p>
+            
+        <section>
+            <h2>Nuestros Servicios</h2>
+            <ul>
+                <li><strong>Consulta Médica General:</strong> Chequeos preventivos y vacunas.</li>
+                <li><strong>Estética Canina y Felina:</strong> Baños, cortes de pelo y limpieza.</li>
+                <li><strong>Urgencias 24/7:</strong> Atención médica inmediata en cualquier momento.</li>
+                <li><strong>Cirugía y Laboratorio:</strong> Equipamiento avanzado para diagnósticos certeros.</li>
+            </ul>
+        </section>
+
+        <section class="seccion-cita">
+            <h2>Agendar una Cita</h2>
+            <form id="formCita" class="formulario-cita">
+                <div class="grupo-formulario">
+                    <label for="mascota">Nombre de la Mascota:</label>
+                    <input type="text" id="mascota" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="tipo">Tipo de Mascota:</label>
+                    <select id="tipo">
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="motivo">Motivo de la Cita:</label>
+                    <textarea id="motivo" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar Solicitud</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Vinculación del archivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
+>>>>>>> 463a4a0 (Commit 2: Agregamos estilos CSS)
